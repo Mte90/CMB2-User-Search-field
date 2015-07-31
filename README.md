@@ -7,6 +7,8 @@ Adds a new text field type (with a button), `user_search_text` that adds a quick
 
 ##Example
 
+![16](https://cloud.githubusercontent.com/assets/403283/9018164/7f20de4a-37dc-11e5-994f-43fa17dba7ff.png)
+
 ###Initialize the fields
 
 ```php
