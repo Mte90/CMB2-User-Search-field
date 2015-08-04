@@ -36,6 +36,6 @@ $user_split = explode( ',', str_replace( ' ', '', $users ) );
 foreach ( $user_split as $user ) {
 	$user = get_user_by( 'id', $user );
 	$name = trim( $user->display_name ) ? $user->display_name : $user->user_login;
-	echo '<a href="' . home_url( '/member/' . $user->user_login ) . '">' . $name . '</a>, ';
+	echo '<b>' . $name . '</b>, ';
 }
 ```
