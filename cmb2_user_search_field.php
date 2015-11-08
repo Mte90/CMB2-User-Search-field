@@ -207,7 +207,7 @@ function cmb2_user_search_render_field( $field, $escaped_value, $object_id, $obj
 
 	          });
 
-	          window.cmb2_user_search<?php echo $field->args( 'id' ) ?> = new UserSearchView<?php echo str_replace( '-', '_', $field->args( 'id' ) ) ?>();
+	          window.cmb2_user_search<?php echo str_replace( '-', '_', $field->args( 'id' ) ) ?> = new UserSearchView<?php echo str_replace( '-', '_', $field->args( 'id' ) ) ?>();
 
 	          $('.cmb-type-user-search-text.cmb2-id-<?php echo str_replace( '_', '-', sanitize_html_class( $field->args( 'id' ) ) ) ?> .cmb-th label').after('<div title="' + l10n.find + '" style="position:relative;left:30%;color: #999;cursor: pointer;" class="dashicons dashicons-search"></div>');
 
