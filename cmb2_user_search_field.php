@@ -214,7 +214,7 @@ function cmb2_user_search_render_field( $field, $escaped_value, $object_id, $obj
 	          $('.cmb-type-user-search-text.cmb2-id-<?php echo str_replace( '_', '-', sanitize_html_class( $field->args( 'id' ) ) ) ?> .cmb-th .dashicons-search').on('click', openSearch);
 
 	          function openSearch(evt) {
-	            var search = window.cmb2_user_search<?php echo $field->args( 'id' ) ?>;
+	            var search = window.cmb2_user_search<?php echo str_replace( '-', '_', $field->args( 'id' ) ) ?>;
 	            search.$idInput = $(evt.currentTarget).parents('.cmb-type-user-search-text').find('.cmb-td input[type="text"]');
 	            search.roles = search.$idInput.data('roles');
 	            search.selectType = 'radio' === search.$idInput.data('selecttype') ? 'radio' : 'checkbox';
