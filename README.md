@@ -1,3 +1,7 @@
+# Abandoned
+
+There is a better alternative: https://github.com/rubengc/cmb2-field-ajax-search
+
 CMB2 User Search field
 ======================
 
@@ -5,11 +9,11 @@ Custom field for CMB2 which adds a user-search dialog for searching/attaching ot
 
 Adds a new text field type (with a button), `user_search_text` that adds a quick user search dialog for saving user IDs to a text input.
 
-##Example
+## Example
 
 ![16](https://cloud.githubusercontent.com/assets/403283/9018164/7f20de4a-37dc-11e5-994f-43fa17dba7ff.png)
 
-###Initialize the fields
+### Initialize the fields
 
 ```php
 // Classic CMB2 declaration
@@ -28,7 +32,7 @@ $cmb->add_field( array(
 ) );
 ```
 
-###Show in the frontend
+### Show in the frontend
 
 ```php
 $users = get_post_meta( get_the_ID(), 'prefix-user', true );
