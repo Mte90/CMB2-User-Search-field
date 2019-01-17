@@ -105,8 +105,9 @@ function cmb2_user_search_render_field( $field, $escaped_value, $object_id, $obj
 	              this.$input.focus();
 
 	              if (!this.$overlay.length) {
-	                $('body').append('<div id="find-users-ui-find-overlay" class="ui-find-overlay"></div>');
-	                this.$overlay = $('#find-users-ui-find-overlay');
+	                var number = Math.floor( Math.random() * 10 );
+	                $('body').append('<div id="find-users-ui-find-overlay' + number + '" class="ui-find-overlay"></div>');
+	                this.$overlay = $('#find-users-ui-find-overlay' + number);
 	              }
 
 	              this.$overlay.show();
